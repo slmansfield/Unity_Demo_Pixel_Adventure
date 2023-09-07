@@ -21765,6 +21765,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aea88887363e48f8bf4470a852cfc42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpableGround:
+    serializedVersion: 2
+    m_Bits: 64
   jumpForce: 14
   moveSpeed: 7
 --- !u!95 &1235325773
@@ -21849,7 +21852,8 @@ GameObject:
   - component: {fileID: 1981389366}
   - component: {fileID: 1981389365}
   - component: {fileID: 1981389368}
-  m_Layer: 0
+  - component: {fileID: 1981389369}
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22794,7 +22798,7 @@ CompositeCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_GeometryType: 0
@@ -22896,6 +22900,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5825da1e592ba4ba1bc1b1a83f614192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!251 &1981389369
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981389361}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 0
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
