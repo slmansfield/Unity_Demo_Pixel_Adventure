@@ -14,9 +14,11 @@ public class PlayerMovement : MonoBehaviour
     private float dirX = 0f;
     [SerializeField] private float jumpForce = 14f;
     [SerializeField] private float moveSpeed = 7f;
+    
 
     private enum MovementState { idle, running, jumping, falling };
     
+    [SerializeField] private AudioSource jumpSoundEffect;
 
     // Start is called before the first frame update
     private void Start()
@@ -38,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && IsGrounded())
 
         {
+            jumpSoundEffect.Play();
             rb.velocity = new Vector3(0, jumpForce, 0);
         }
 
