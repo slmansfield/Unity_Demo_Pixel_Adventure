@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5654620390579773827}
   - component: {fileID: 2122967881356930619}
   m_Layer: 0
-  m_Name: Spikes
+  m_Name: Singes Single Pair
   m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
